@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffecec;
+            color: #000;
+        }
+        .container {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #ff4b4b;
+        }
+        .features {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            background-color: #ff4b4b;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        .btn-primary {
+            background-color: #ff4b4b;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #e03e3e;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #ff4b4b;
+            padding: 12px 24px;
+            border: 2px solid #ff4b4b;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #ff4b4b;
+            color: #fff;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 400px;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 40px;
+            }
+            .images {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <p>PROFESSIONAL DESIGN STUDIO</p>
+        <h1>Where <span class="highlight">Creativity</span> Blossoms</h1>
+        <div class="features">
+            <div class="feature">
+                <span class="icon"></span>
+                Reliable
+            </div>
+            <div class="feature">
+                <span class="icon"></span>
+                Cost-Effective
+            </div>
+            <div class="feature">
+                <span class="icon"></span>
+                No Contracts
+            </div>
+            <div class="feature">
+                <span class="icon"></span>
+                Trusted by Top Clients
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn-primary">Get Started →</button>
+            <button class="btn-secondary">Check Order Status</button>
+        </div>
+    </div>
+    <div class="images">
+        <div class="image-placeholder"></div>
+        <div class="image-placeholder"></div>
+        <div class="image-placeholder"></div>
+        <div class="image-placeholder"></div>
+    </div>
+</div>
+
+</body>
+</html>
