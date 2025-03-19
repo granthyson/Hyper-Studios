@@ -1,145 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creative Studio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffecec;
-            color: #000;
-        }
-        .container {
-            padding: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .content {
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .highlight {
-            color: #ff4b4b;
-        }
-        .features {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        .feature {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #333;
-        }
-        .icon {
-            width: 20px;
-            height: 20px;
-            background-color: #ff4b4b;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .buttons {
-            margin-top: 30px;
-            display: flex;
-            gap: 20px;
-        }
-        .btn-primary {
-            background-color: #ff4b4b;
-            color: #fff;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .btn-primary:hover {
-            background-color: #e03e3e;
-        }
-        .btn-secondary {
-            background-color: transparent;
-            color: #ff4b4b;
-            padding: 12px 24px;
-            border: 2px solid #ff4b4b;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .btn-secondary:hover {
-            background-color: #ff4b4b;
-            color: #fff;
-        }
-        .images {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 400px;
-        }
-        .image-placeholder {
-            width: 100%;
-            height: 150px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                gap: 40px;
-            }
-            .images {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logo.png">
+        <title>Hyper Studios</title>
+        <meta name="description" content="Hyper Studios is your solution to your livery, clothing, and graphic needs. We offer outstanding quality, separating us from the rest, and strive to provide a premium customer experience.">
+        <meta property="og:title" content="Hyper Studios">
+        <meta property="og:description" content="Hyper Studios is your solution to your livery, clothing, and graphic needs. We offer outstanding quality, separating us from the rest, and strive to provide a premium customer experience.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://cdn.discordapp.com/attachments/1351958052454142033/1351958117457592422/logo.png?ex=67dc449d&is=67daf31d&hm=8c81f701c6ee82e6b178da761f3065a25eaacd223a436bf1597ec59d0d96d76f&">
+        <meta name="theme-color" content="#1faf59">
+        <meta name="keywords" content="livery, clothing, graphics, Hyper Studios, custom design, quality products, hyper studios, design, logo, banner, banners">
+        <meta name="author" content="Hyper Studios">
+        <meta name="robots" content="index, follow">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+      </head>
 <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="index.html">
+              <img src="logo.png" alt="Logo" loading="lazy" width="40">
+            </a>
+          </div>
+          <div class="nav-right">
+            <a href="https://discord.gg/eYuJ3BErzG" class="get-started-btn" target="_blank" rel="noopener noreferrer">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-<div class="container">
-    <div class="content">
-        <p>PROFESSIONAL DESIGN STUDIO</p>
-        <h1>Where <span class="highlight">Creativity</span> Blossoms</h1>
-        <div class="features">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Transforming your <span class="highlight">ideas</span></h1>
+          
+          <div class="features">
             <div class="feature">
-                <span class="icon"></span>
-                Reliable
+              <div class="check-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>Reasonable Pricing</span>
             </div>
             <div class="feature">
-                <span class="icon"></span>
-                Cost-Effective
+              <div class="check-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>Quality Products</span>
             </div>
             <div class="feature">
-                <span class="icon"></span>
-                No Contracts
+              <div class="check-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>Customer Oriented</span>
             </div>
             <div class="feature">
-                <span class="icon"></span>
-                Trusted by Top Clients
+              <div class="check-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <span>Great Reputation</span>
             </div>
+          </div>
+          
+          <div class="cta-buttons">
+            <a href="https://discord.gg/eYuJ3BErzG" class="get-started-btn" target="_blank" rel="noopener noreferrer">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="buttons">
-            <button class="btn-primary">Get Started →</button>
-            <button class="btn-secondary">Check Order Status</button>
-        </div>
-    </div>
-    <div class="images">
-        <div class="image-placeholder"></div>
-        <div class="image-placeholder"></div>
-        <div class="image-placeholder"></div>
-        <div class="image-placeholder"></div>
-    </div>
-</div>
+      </div>
+    </section>
 
+    <section class="about">
+      <div class="container">
+        <h2>About Hyper Studios</h2>
+        <p>Hyper Studios is your solution to your livery, clothing, and graphic needs. We offer outstanding quality, separating us from the rest, and strive to provide a premium customer experience.</p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <h3>Graphics</h3>
+            <p>Custom, memorable graphics that represent your community's identity.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-car"></i>
+            </div>
+            <h3>Liveries</h3>
+            <p>Eye-catching liveries to make your community stand out.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3>Clothing</h3>
+            <p>Custom designed shirts, pants, and uniforms for your community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <h2>Our Process</h2>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Create an Order</h3>
+            <p>Clients create an order using our advanced and easy to use ticket system, and provides details on what product they need.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Payment</h3>
+            <p>After a client has provided necessary details, a designer will guide the client along with the payment process. </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Product Preparation</h3>
+            <p>A designer begins creating the client's product, providing helpful updates along the way.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Client Evaluation</h3>
+            <p>The client approves or requests changes to be made to their product.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">5</div>
+            <h3>Order Complete</h3>
+            <p>The client receives all products and the order is finished.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2>Client Reviews</h2>
+        <div class="review-grid">
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"Collaborating with Hyper Studios was an incredible experience! They managed my order with remarkable efficiency, attending to every detail with diligent care. Their communication throughout the process was exceptional!"</p>
+            <div class="reviewer">
+              <div class="reviewer-name">Lando</div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Transform Your Community?</h2>
+        <p>Join our Discord server today and start your order process with Hyper Studios.</p>
+        <a href="https://discord.gg/eYuJ3BErzG" class="join-discord-btn" target="_blank" rel="noopener noreferrer">Join Today <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">© 2025 Hyper Studios. All rights reserved.</p>
+      </div>
+    </div>
+        <p class="notice">Hyper Studios does not collect any personal user information directly but does contain external links to sites such as Discord,<br>we claim no responsability for any loss or harm while accessing these links.<br> Please browse safely!</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
